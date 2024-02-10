@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login/signup.dart';
 import 'package:login/forgotpassword.dart';
+import 'package:login/newpassword.dart';
 
 void main() => runApp(
     MaterialApp(

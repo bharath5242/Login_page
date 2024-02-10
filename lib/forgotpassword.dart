@@ -32,7 +32,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Enter your email or phone number, we will send you cofirmation code",
+              "Enter your email or phone number, we will send you confirmation code",
               style: TextStyle(color: Colors.grey),
             ),
             SizedBox(height: 8),
@@ -103,7 +103,12 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               ],
             ),
             MaterialButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => VerificationPage()),
+                );
+              },
               child: Container(
                 width: double.infinity,
                 height: 50,
@@ -130,3 +135,4 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     );
   }
 }
+
